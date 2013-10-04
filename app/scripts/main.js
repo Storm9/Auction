@@ -27,7 +27,16 @@ require.config({
 });
 
 require([
-    'backbone'
-], function (Backbone) {
+    'backbone',
+    'routes/MobileRouter'
+], function (Backbone, MobileRouter) {
+    var url = document.URL;
+    var hashIndex = url.indexOf('#');
+    var pageUrl = (hashIndex >= 0) ? url.substring( hashIndex ) : '#';
+
     Backbone.history.start();
+//    Backbone.history.start({ pushState: true});
+
+    var router = new MobileRouter();
+    router.navigate( pageUrl, {trigger: true} );
 });

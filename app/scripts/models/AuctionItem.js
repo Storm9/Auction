@@ -1,5 +1,3 @@
-/* Model */
-
 define([
     'underscore',
     'backbone'

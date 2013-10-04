@@ -1,5 +1,3 @@
-/* View */
-
 define([
     'jquery',
     'underscore',
@@ -9,12 +7,20 @@ define([
 ], function ($, _, Backbone, JST) {
     'use strict';
 
-    el: "#auctionItem",
-    
     var AuctionItem = Backbone.View.extend({
-        template: JST['app/scripts/templates/AuctionItem.ejs']
-    });
 
+        template: JST['app/scripts/templates/AuctionItem.ejs'],
+
+        el: "#auctionItem",
+
+        initialize: function(){
+            this.render();
+        },
+
+        render: function(){
+            $(this.el).append(this.template);
+        }
+    })
 
     return AuctionItem;
 });

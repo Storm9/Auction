@@ -1,5 +1,3 @@
-/*global define*/
-
 define([
     'jquery',
     'backbone',
@@ -10,15 +8,14 @@ define([
     'use strict';
 
     var MobileRouter = Backbone.Router.extend({
+        routes: {
+            "index/:page": "index"
+        },
 
     	initialize: function() {
-    		Backbone.history.start();
-    	}
-        routes: {
-        	"":"index"
-        }
+    	},
 
-        index: function(){
+        index: function(el){
         	new View();
         }
 

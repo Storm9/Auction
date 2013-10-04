@@ -1,5 +1,3 @@
-/* Collection */
-
 define([
     'underscore',
     'backbone',
@@ -7,9 +5,9 @@ define([
 ], function (_, Backbone, AuctionItem) {
     'use strict';
 
-    var AucdtionItems = Backbone.Collection.extend({
-        model: AuctionItem;
+    var AuctionItems = Backbone.Collection.extend({
+        model: AuctionItem
     });
 
-    return Auctionitems;
+    return AuctionItems;
 });
