@@ -18,7 +18,12 @@ define([
         },
 
         render: function(){
-            $(this.el).html(this.template);
+            $(this.el).html(this.template({
+                itemName: "Apple iPhone 5s 16GB",
+                currentBidPrice: "124.88",
+                highestBidderName: "Penny Pritzker",
+                itemDescription: "Brand new Gold 16gb. Gold iPhone 5s"
+            }));
         }
     })
 

@@ -1,19 +1,20 @@
 <div id="header">
-  <h1>Apple iPhone 5s 16GB</h1>
+  <h1><%= itemName %></h1>
 </div>
 <div id="bidInformation">
     <table>
         <tr>
             <td>Current Price: </td>
-            <td>$125.66</td>
+            <td>$<%= currentBidPrice %></td>
         </tr>
         <tr>
             <td>Highest Bidder: </td>
-            <td>Homer Simpson</td>
+            <td><%= highestBidderName %></td>
         </tr>
     </table>
     <button type="button">Bid</button>
 </div>
 <div id="itemInformation">
     <h3>Item Description:</h3>
+    <p><%= itemDescription %></p>
 </div>

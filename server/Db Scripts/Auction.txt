@@ -1,0 +1,16 @@
+db.auctions.insert([
+	{
+		"id": 1,
+		"title": "Apple iPhone 5s",
+		"startingBid": 0.99,
+		"currentBid": 450.00,
+		"description": "Un-boxed brand new iPhone 5s 64GB."
+	},
+	{
+		"id": 2,
+		"title": "Autographed Derrick Rose Jersey",
+		"startingBid": 100.00,
+		"currentBid": 525.00,
+		"description": "Used bulls D. Rose jersey #1"
+	}
+])
